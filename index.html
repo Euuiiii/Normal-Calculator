@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="title">
+      <h1>Normal Calculator</h1>
+    </div>
+    <div class="outerbox">
+      
+      <div class="calc">
+        <input id="display" type="text" disabled>
+        <div>
+          <button class="clear-btn" onclick="clearDisplay()">C</button>
+          <button class="del-btn" onclick="eraseLastCharacter()">Del</button>
+          <button class="percentage-btn" onclick="calculatePercentage()">%</button>
+          <button onclick="appendCharacter('/')">÷</button>
+        </div>
+        <div>
+          <button onclick="appendCharacter('7')">7</button>
+          <button onclick="appendCharacter('8')">8</button>
+          <button onclick="appendCharacter('9')">9</button>
+          <button onclick="appendCharacter('*')">×</button>
+        </div>
+        <div>
+          <button onclick="appendCharacter('4')">4</button>
+          <button onclick="appendCharacter('5')">5</button>
+          <button onclick="appendCharacter('6')">6</button>
+          <button onclick="appendCharacter('-')">−</button>
+        </div>
+        <div>
+          <button onclick="appendCharacter('1')">1</button>
+          <button onclick="appendCharacter('2')">2</button>
+          <button onclick="appendCharacter('3')">3</button>
+          <button onclick="appendCharacter('+')">+</button>
+        </div>
+        <div>
+          <button onclick="appendCharacter('00')">00</button>
+          <button onclick="appendCharacter('0')">0</button>
+          <button onclick="appendCharacter('.')">.</button>
+          <button onclick="calculateResult()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
